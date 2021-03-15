@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="36sp"
+            android:typeface="normal"
+            tools:text="Bem Vindo" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicleReunion"
+            android:layout_width="303dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnVoz"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_lock_silent_mode_off"
+            app:fabCustomSize="25dp"
+            app:maxImageSize="18dp"
+            app:backgroundTint="#3F51B5"
+            app:fabSize="normal" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:fabCustomSize="35dp"
+            app:maxImageSize="20dp"
+            android:focusable="true"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="#3F51B5"
+            app:fabSize="normal" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
